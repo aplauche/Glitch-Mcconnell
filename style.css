@@ -44,7 +44,7 @@ canvas {
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px; 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
 }
 
