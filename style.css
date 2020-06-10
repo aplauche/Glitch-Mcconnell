@@ -8,7 +8,7 @@ body {
     background: black;
     color: white;
     font-family: 'Roboto Mono';
-    overflow:hidden;
+    overflow: hidden;
 }
 
 
@@ -21,14 +21,16 @@ h1 {
 }
 
 p.info {
-    position: fixed;
+    /* position: fixed;
     top: 40px;
-    right: 40px;
+    right: 40px; */
+    z-index: 3;
 }
 
 
 canvas {
     vertical-align: bottom;
+    z-index:1
 }
 
 .bottom-bar {
@@ -41,7 +43,9 @@ canvas {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
+    padding: 10px 50px; 
+    flex-wrap: wrap;
+
 }
 
 .bottom-bar a {
@@ -52,6 +56,13 @@ canvas {
 
 h1,a,p {
     mix-blend-mode: difference;
+}
+
+.btn {
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* nav {
