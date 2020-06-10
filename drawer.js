@@ -124,7 +124,7 @@ document.addEventListener('mousedown', (e) => {
     }
 })
 
-document.addEventListener('touchstart', () => {
+document.addEventListener('touchstart', (e) => {
     if(e.target !== switchBtn && e.target !== dlBtn){
     currentX = event.pageX
     currentY = event.pageY
