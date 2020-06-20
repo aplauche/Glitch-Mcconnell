@@ -118,16 +118,18 @@ document.getElementById('clear-btn').addEventListener('click', function() {
 
 document.addEventListener('mousedown', (e) => {
     if(e.target !== switchBtn && e.target !== dlBtn){
-    currentX = event.pageX
-    currentY = event.pageY
+    currentX = e.pageX
+    currentY = e.pageY
     drawing = true
     }
 })
 
 document.addEventListener('touchstart', (e) => {
     if(e.target !== switchBtn && e.target !== dlBtn){
-    currentX = event.pageX
-    currentY = event.pageY
+    currentX = e.pageX
+    currentY = e.pageY
+    aimX = null
+    aimY = null
     drawing = true
     }
 })
