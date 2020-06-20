@@ -128,8 +128,8 @@ document.addEventListener('touchstart', (e) => {
     if(e.target !== switchBtn && e.target !== dlBtn){
     currentX = e.pageX
     currentY = e.pageY
-    aimX = null
-    aimY = null
+    aimX = e.pageX
+    aimY = e.pageY
     drawing = true
     }
 })
